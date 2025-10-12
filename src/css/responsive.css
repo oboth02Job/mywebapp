@@ -1,4 +1,4 @@
-/*For Mobile screens*/
+/*For Mobile screens */
 body {
     font-size: 15px;
     line-height: 1.5;
@@ -22,17 +22,18 @@ nav ul {
     }
 }
 
-/*@media (min-width: 900px) {
+@media (min-width: 900px) {
     
-    }*/
-.hamburger {
+    }
+
+    .hamburger {
     display: block;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
 nav ul {
-    display: none;
+    display: ;
 }
 
 nav.active ul {
