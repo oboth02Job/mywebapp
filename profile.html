@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="src/css/main1.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/include.js"></script>
 </head>
@@ -49,6 +51,63 @@
                 </div>
             </div>
         </section>
+
+        <h2>My Nutrition Tracker</h2>
+
+  <form id="mealForm" class="meal-form">
+    <input 
+      type="text" 
+      id="mealInput" 
+      placeholder="Enter meal (e.g., 2 eggs and toast)" 
+      required
+    />
+    <button type="submit">Analyze</button>
+  </form>
+
+  <p id="dailyTotal" class="daily-total">Total Calories Today: 0 kcal</p>
+
+  <div id="nutritionResults" class="nutrition-results"></div>
+
+<section class="profile-page">
+    <h2>My Fitness Profile</h2>
+
+  <form id="profileForm">
+    <label>
+      Name:
+      <input type="text" id="name" placeholder="Enter your name">
+    </label>
+
+    <label>
+      Age:
+      <input type="number" id="age" placeholder="Enter your age">
+    </label>
+
+    <label>
+      Fitness Goal:
+      <select id="goal">
+        <option value="">Select goal</option>
+        <option value="build muscle">Build Muscle</option>
+        <option value="lose weight">Lose Weight</option>
+        <option value="stay fit">Stay Fit</option>
+      </select>
+    </label>
+
+    <label>
+      Daily Calorie Target:
+      <input type="number" id="calories" placeholder="Enter calorie goal">
+    </label>
+
+    <label>
+      Preferred Workout:
+      <input type="text" id="workout" placeholder="e.g. pushups, cardio">
+    </label>
+
+    <button type="submit">Save Profile</button>
+  </form>
+
+  <div id="profileSummary" class="profile-summary"></div>
+
+</section>
 
     </main>
     <footer></footer>

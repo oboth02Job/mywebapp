@@ -10,7 +10,7 @@ async function loadComponent(selector, file) {
             console.error(`Error loading ${file}:`, err)
         }
     }
-}
+} 
 
 //Load both components
 loadComponent("header", "/src/components/header.html");
