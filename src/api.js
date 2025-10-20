@@ -1,20 +1,14 @@
 
-const API_URL =
-"https://wger.de/api/v2/exercise/?limit=12&language=2";
 
-//fetch exercises from the wger api//
 export async function fetchExercises() {
-    try {
-        const response = await fetch (API_URL);
-        const data = await response.json();
-
-        //Filter out exercises with a name and category
-        const filtered = data.results.filter(ex => ex.name && ex.category);
-        return filtered;
-         } catch (error) {
-            console.error("Error fetching data:", error);
-            return[];
-         }              
+  try {
+    const response = await fetch("https://wger.de/api/v2/exercise/?language=2&limit=12");
+    const data = await response.json();
+    return data.results;
+  } catch (error) {
+    console.error("Error fetching exercises:", error);
+    return [];
+  }
 }
 
 

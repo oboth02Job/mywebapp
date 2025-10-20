@@ -1,5 +1,4 @@
 /* workout module styles */
-
 .workout-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
